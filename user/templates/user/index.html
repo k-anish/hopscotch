@@ -1,0 +1,240 @@
+<!DOCTY+PE html>
+<html>
+   <head>
+      <title>Hopscotch Giftery</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        {% load static %}
+      <link href="{% static 'user/css/glyphicon.css' %}" rel="stylesheet">
+
+        {% load static %}
+      <link href="{% static 'user/css/HSbootstrap.css' %}" rel="stylesheet" type="text/css" media="all"/>
+
+        {% load static %}
+      <link href="{% static 'user/css/HS.css' %}" rel="stylesheet" type="text/css" media="all"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        {% load static %}
+      <script src="{% static 'user/js/jquery-3.2.0.js' %}"></script>
+   </head>
+   <body>
+     <div data-role="page">
+       <div data-role="header" data-position="fixed">
+         <div id="top-bar">
+           <div class="row">
+             <div class="span10">
+               <form method="POST" class="search_form">
+                  <input type="text" class="input-block-level search-query" Placeholder="Search...">
+               </form>
+             </div>
+             <div class="span4">
+               <div class="account pull-right">
+                  <ul class="user-menu">
+                     <button type="button" class="btnn">Login</button>
+                     <a name="top"></a>
+                     <button class="btnn"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</button>
+                  </ul>
+               </div>
+             </div>
+           </div>
+         </div>
+      <!--dropdowns-->
+         <div class="container">
+           <div class="wrapper row2">
+             <nav id="topnav">
+               <div class="row">
+                  <div class="col-md-1">
+
+                      {% load static %}
+                     <img src="{% static 'user/images/demologo.png' %}" height="200px" width="300px" />
+                  </div>
+                  <div class="col-md-9">
+                     <ul class="clear">
+                        <li>
+                           <a class="drop" href="#" title="Same day">Same day <span class="glyphicon glyphicon-chevron-down"></span></a>
+                           <ul>
+                              <li><a href="#" title="1">1</a></li>
+                              <li><a href="#" title="2">2</a></li>
+                              <li><a href="#" title="3">3</a></li>
+                              <li><a href="#" title="4">4</a></li>
+                              <li class="last-child"><a href="#" title="5">5</a></li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a class="drop" href="#" title="Handmade"> Handmade <span class="glyphicon glyphicon-chevron-down"></span></a>
+                           <ul>
+                              <li><a href="#" title="1">1</a></li>
+                              <li><a href="#" title="2">2</a></li>
+                              <li><a href="#" title="3">3</a></li>
+                              <li><a href="#" title="4">4</a></li>
+                              <li class="last-child"><a href="#" title="5">5</a></li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a class="drop" href="#" title="Occasion"> Occasion <span class="glyphicon glyphicon-chevron-down"></span></a>
+                           <ul>
+                              <li><a href="#" title="1">1</a></li>
+                              <li><a href="#" title="2">2</a></li>
+                              <li><a href="#" title="3">3</a></li>
+                              <li><a href="#" title="4">4</a></li>
+                              <li class="last-child"><a href="#" title="5">5</a></li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a class="drop" href="#" title="Relaion"> Relation <span class="glyphicon glyphicon-chevron-down"></span></a>
+                           <ul>
+                              <li><a href="#" title="1">1</a></li>
+                              <li><a href="#" title="2">2</a></li>
+                              <li><a href="#" title="3">3</a></li>
+                              <li><a href="#" title="4">4</a></li>
+                              <li class="last-child"><a href="#" title="5">5</a></li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a class="drop" href="#" title="Package"> Package <span class="glyphicon glyphicon-chevron-down"></span></a>
+                           <ul>
+                              <li><a href="#" title="1">1</a></li>
+                              <li><a href="#" title="2">2</a></li>
+                              <li><a href="#" title="3">3</a></li>
+                              <li><a href="#" title="4">4</a></li>
+                              <li class="last-child"><a href="#" title="5">5</a></li>
+                           </ul>
+                        </li>
+                        <li class="last-child"><a href="#" title="Personal Assistance"><span class="glyphicon glyphicon-user"></span> Personal Assistance</a></li>
+                     </ul>
+                  </div>
+               </div>
+             </nav>
+           </div>
+         </div>
+       </div>
+      <!--slider-->
+       <div class="Hs-content Hs-display-container">
+         <div class="mySlides fade">
+
+                   {% load static %}
+            <img src="{% static 'user/images/1.jpg' %}" style="width:100%">
+         </div>
+         <div class="mySlides fade">
+
+                   {% load static %}
+            <img src="{% static 'user/images/2.jpg' %}" style="width:100%">
+         </div>
+         <div class="mySlides fade">
+
+                   {% load static %}
+            <img src="{% static 'user/images/3.jpg' %}" style="width:100%">
+         </div>
+         <div class="mySlides fade">
+
+                   {% load static %}
+            <img src="{% static 'user/images/4.jpg' %}" style="width:100%">
+         </div>
+         <div class="mySlides fade">
+
+                   {% load static %}
+            <img src="{% static 'user/images/6.jpg' %}" style="width:100%">
+         </div>
+         <button class="Hs-button Hs-black Hs-display-left btnn" onclick="plusDivs(-1)">&#10094;</button>
+         <button class="Hs-button Hs-black Hs-display-right btnn" onclick="plusDivs(1)">&#10095;</button>
+       </div>
+       <div class="row">
+         <div class="col-ld-4 textt">Trending this month</div>
+         <div class="col-ld-4 textb">Trending this month</div>
+         <div class="col-ld-4 textt">Trending this month</div>
+         <div class="col-ld-4 textb">Trending this month</div>
+       </div>
+       <div class="row">
+         <div class="col-ld-4 textb">Trending this month</div>
+         <div class="col-ld-4 textt">Trending this month</div>
+         <div class="col-ld-4 textb">Trending this month</div>
+         <div class="col-ld-4 textt">Trending this month</div>
+       </div>
+       <div class="foot">
+         <a href="#top"><button class="btn-top">Back to top</button></a>
+      <!--
+         <div class="slider1">
+           <div class="slide"><img src="images/1.jpg"/></div>
+           <div class="slide"><img src="images/2.jpg"/></div>
+           <div class="slide"><img src="images/3.jpg"/></div>
+           <div class="slide"><img src="images/4.jpg"/></div>
+         </div>
+         -->
+         <div class="container">
+           <div class="row2" >
+             <div class="span3 col-xs-4 foots">
+               <h3>Get to know us</h3>
+               <ul class="nospace">
+                  <li><a hre=#>About us</a></li>
+                  <li><a hre=#>Contact Us</a></li>
+                  <li><a hre=#>Blog</a></li>
+                  <li><a hre=#>Stores</a></li>
+               </ul>
+             </div>
+             <div class="span5 col-xs-4 foots">
+               <h3>Help</h3>
+               <ul class="nospace last2">
+                  <li><a hre=#>Payments</a></li>
+                  <li><a hre=#>Cancellation & Return</a></li>
+                  <li><a hre=#>FAQ</a></li>
+               </ul></div>
+               <div class="span6 col-xs-4 foots">
+                 <h3>Business</h3>
+                 <ul class="nospace last2">
+                   <li><a hre=#>Partner with HS</a></li>
+                 </ul>
+               </div>
+             </div>
+             <div style="display: block; clear: both;">
+               <h2 style="color: white;">Follow us on:
+                 <div id="social">
+                     <a class="facebookBtn smGlobalBtn" href="#" ></a>
+                     <a class="twitterBtn smGlobalBtn" href="#" ></a>
+                     <a class="googleplusBtn smGlobalBtn" href="#" ></a>
+                     <a class="linkedinBtn smGlobalBtn" href="#" ></a>
+                     <a class="pinterestBtn smGlobalBtn" href="#" ></a>
+                     <a class="tumblrBtn smGlobalBtn" href="#" ></a>
+                     <a class="rssBtn smGlobalBtn" href="#" ></a>
+                 </div>
+               </h2>
+             </div>
+           </div>
+         </div>
+       </div>
+
+       <script type="text/javascript">
+         /*top*/
+         var slideIndex = 0;
+         showSlides();
+
+         function showSlides() {
+             var i;
+             var slides = document.getElementsByClassName("mySlides");
+             for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+         //    slides[slideIndex-1].style.z-index=1;
+             }
+             slideIndex++;
+             if (slideIndex> slides.length) {slideIndex = 1}
+             slides[slideIndex-1].style.display = "block";
+             setTimeout(showSlides, 2000); // Change image every 2 seconds
+         }
+
+         function plusDivs(n) {
+             showDivs(slideIndex += n);
+         }
+
+         function showDivs(n) {
+             var i;
+             var x = document.getElementsByClassName("mySlides");
+             if (n > x.length) {slideIndex = 1}
+             if (n < 1) {slideIndex = x.length} ;
+             for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";
+             }
+             x[slideIndex-1].style.display = "block";
+         }
+
+      </script>
+   </body>
+</html>
